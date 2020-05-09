@@ -3,6 +3,7 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 		$(this).siblings().removeClass('active');
 	});
+
 	$('#search').on('click', function(){
 		$('#search').fadeOut(0); 
 		$('#search-exit').fadeIn(0);
@@ -31,6 +32,7 @@ $(document).ready(function(){
 		$('.header__news').slideUp(300);
 		$('.menu-2').removeClass('menu-2_active');
 	});
+	baguetteBox.run('#lightgallery');
 });
 $(document).on("scroll", function(){
     if($(document).scrollTop()>120){
@@ -76,7 +78,7 @@ $('.header__slider').slick({
 });
 $('.dragons__slider').slick({
 	infinite: true,
-	arrows: true,
+	arrows: false,
 	slidesToShow:1,
 	speed:250,
 	appendArrows: '.slider-arrows',
