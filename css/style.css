@@ -2378,6 +2378,10 @@ body {
     display: flex;
   }
 
+  .header_small .header__content {
+    height: calc(100% - 54px);
+  }
+
   .header_small {
     top: 0;
   }
